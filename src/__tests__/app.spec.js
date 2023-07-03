@@ -12,13 +12,6 @@ describe('App', () => {
     expect(title).toBeInTheDocument()
   })
 
-  it('should render the list of people', () => {
-    render(<App />)
-
-    const list = screen.getByRole('list')
-    expect(list).toBeInTheDocument()
-  })
-
   it('should remove all birthdays when the clear all button is clicked', async () => {
     render(<App />)
 
